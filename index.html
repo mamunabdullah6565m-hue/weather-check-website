@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Time Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container" id="appContainer">
+    <header>
+      <h1>Real Time Weather App</h1>
+      <p>Course Name: Web Development</p>
+      <p>Trainer: Abdullah Al Mamun</p>
+    </header>
+
+    <div class="search-section">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="weatherDisplay" class="weather-display hidden">
+      <h2 id="cityName"></h2>
+      <p id="dateTime"></p>
+      <p id="condition"></p>
+      <h3 id="temperature"></h3>
+      <p>💧 Humidity: <span id="humidity"></span>%</p>
+      <p>🌬 Wind Speed: <span id="windSpeed"></span> m/s</p>
+
+      <div class="forecast">
+        <div class="forecast-day">
+          <h4>Previous Day</h4>
+          <p id="prevTemp"></p>
+        </div>
+        <div class="forecast-day">
+          <h4>Next Day</h4>
+          <p id="nextTemp"></p>
+        </div>
+      </div>
+    </div>
+
+    <p id="error" class="error"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
